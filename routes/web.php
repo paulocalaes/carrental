@@ -12,10 +12,6 @@
 */
 
 // route to show the login form
-Route::get('/', array('uses' => 'HomeController@showLogin'));
-
-
-// route to show the login form
-Route::get('login', array('uses' => 'HomeController@showLogin'));
-
-Route::get('cars', array('uses' => 'HomeController@listCars'));
+Route::get('/', function () {
+    return view('index');
+});
