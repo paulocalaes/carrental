@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Book Wishlist Application</title>
+        <title>Car Rental API</title>
 
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Book Wishlist Application</h1>
+                    <h1>Car Rental API</h1>
                 </div>
             </div>
 
