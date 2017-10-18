@@ -76,8 +76,6 @@ class LoginController extends Controller
         if ($user) {
             $user->api_token = null;
             $user->save();
-            $user->name = null;
-            Auth::user()->name = null;
         }
 
         return response()->json(['data' => 'User logged out.'], 200);
