@@ -22,9 +22,10 @@ Route::post('register', 'Auth\RegisterController@register');
 Route::post('login', 'Auth\LoginController@login');
 Route::post('loginUrl', 'Auth\LoginController@loginUrl');
 Route::post('logout', 'Auth\LoginController@logout');
-Route::post('cars', 'CarController@store');
+
 Route::group(['middleware' => 'auth:api'], function() {
 	Route::get('cars', 'CarController@index');
+	Route::post('cars', 'CarController@store');
 	Route::get('cars/{car}', 'CarController@show');	
 	Route::put('cars/{car}', 'CarController@update');
 	Route::delete('cars/{car}', 'CarController@delete');
